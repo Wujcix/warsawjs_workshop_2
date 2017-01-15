@@ -25,7 +25,8 @@
             this.$form.submit((event) => this.submitFormHandler(event))
         }
 
-        submitFormHandler(){
+        submitFormHandler(event){
+            event.preventDefault();
             console.log('click');
         }
     }
